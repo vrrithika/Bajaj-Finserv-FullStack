@@ -1,13 +1,12 @@
 from fastapi import FastAPI, Request
 from pydantic import BaseModel
 from typing import List
-import re
 
 app = FastAPI()
 
 
 FULL_NAME = "v_r_rithika"
-DOB = "27012005"   # ddmmyyyy
+DOB = "27012005" 
 EMAIL = "rithikaravi27@gmail.com"
 ROLL_NUMBER = "22BLC1315"
 
