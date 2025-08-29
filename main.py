@@ -14,6 +14,13 @@ ROLL_NUMBER = "22BLC1315"
 class InputData(BaseModel):
     data: List[str]
 
+@app.get("/")
+def root():
+    return {"msg": "Welcome to Bajaj Finserv Full Stack Internship Task"}
+
+@app.get("/bfhl")
+async def handle_bfhl_get():
+    return {"status": "GET working. Use POST for sending data."}
 
 @app.post("/bfhl")
 async def process_data(input_data: InputData):
